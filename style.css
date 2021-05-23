@@ -127,7 +127,15 @@ td{
     padding-left: 1.5%;
 }
 
-td:hover{
+td:first-child{
+    width: 75%;
+}
+
+td:last-child{
+    padding-right: 2%;
+}
+
+td:hover + :last-child, td:first-child:hover{
     background: white;
 }
 
@@ -136,7 +144,7 @@ td:hover{
     margin-top: 2px;
 }
 
-h3{
+h2{
     margin-bottom: 1%;
 }
 
@@ -226,6 +234,7 @@ h3{
 }
 
 .footer{
+    color: white;
     font-size: 40%;
     background-color: rgb(114,114,114);
     padding: 1% 0.5%;
@@ -297,6 +306,7 @@ h3{
     }
 
     .requests{
+        color: grey;
         float: right;
         font-size: x-small;
         width: 43%;
@@ -320,8 +330,8 @@ h3{
 
 @media only screen and (min-width:1100px) {
 
-    body{
-        font-size: unset;
+    .header-top{
+        margin-top: -1.5%;
     }
 
     #tutangle{
@@ -329,28 +339,64 @@ h3{
     }
 
     .header-search{
-        padding: 0.5% 0.5%;
-        font-size: small;
+        padding: 0.5% 1%;
+        font-size: 65%;
+        margin-top: 0.7%;
     }
 
+    .header-bottom{
+        font-size: larger;
+    }
 
+    .header-bottom-right{
+        width: 30%;
+        margin-top: 0.7%;
+    }
 
+    .invites{
+        float: left;
+        font-size: 60%;
+        width: 42%;
+        height: auto;
+        vertical-align: middle;
+    }
 
+    .requests{
+        float: right;
+        font-size: 60%;
+        width: 43%;
+        height: auto;
+        vertical-align: middle;
+    }
 
+    #invites{
+        vertical-align: middle;
+        width: 9%;
+        height: auto;
+    }
 
+    #requests{
+        vertical-align: middle;
+        width: 12%;
+        height: auto;
+    }
 
+    .body-wrapper{
+        height: 75%;
+    }
 
     .body-wrapper-left{
-        background: rosybrown;
-        width: 73%;
-        height: auto;
+        width: 77%;
+        height: 100%;
         padding: 1%;
+        padding-right: 0%;
         display: inline-block;
     }
 
     .first-table{
-        background: tomato;
-        width: 30%;
+        background: rgb(245,245,245);
+        width: 28%;
+        height: 100%;
         display: inline-block;
     }
 
@@ -371,22 +417,49 @@ h3{
         padding-left: 4%;
     }
 
+    td:last-child{
+       padding-right: 5px;
+    }
+
     .entry-box{
-        width: 65%;
+        width: 68%;
         float: right;
         vertical-align: top;
         margin-top: -0.7%;
     }
 
+    .entry-box h2{
+        font-size: xx-large;
+        font-weight: 500;
+    }
+
+    .entry{
+        font-size: small;
+    }
+
+    .sub-entry{
+        margin-top: 2%;
+        font-size: smaller;
+    }
+
+    
+
+
+
+
     .body-wrapper-right {
-        background: rosybrown;
-        width: 25%;
+        width: 22%;
+        height: 100%;
         padding: 1%;
+        padding-left: 0%;
         float: right;
     }
 
     .second-table{
+        background: rgb(245,245,245);
         vertical-align: top;
+        width: 100%;
+        height: 100%;
         float: right;
     }
 
@@ -395,8 +468,19 @@ h3{
     }
 
     .footer{
-        margin-top: 1%;
-        font-size: x-small;
+        font-size: 70%;
+    }
+
+    .footer ul{
+        width: 120%;
+    }
+
+    .footer ul li{
+        margin-right: 2%;
+    }
+
+    .footer ul li:first-child{
+        margin-left: unset;
     }
 
 }
