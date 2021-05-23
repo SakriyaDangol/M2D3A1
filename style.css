@@ -4,7 +4,6 @@
 }
 
 .page-wrapper{
-    background-color: black;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -61,4 +60,46 @@
 .header-bottom ul li span{
     left: -20px;
     position: relative;
+}
+
+.body-wrapper{
+    background: brown;
+    width: auto;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.first-table{
+
+    width: auto;
+}
+
+table{
+    background: rgb(245,245,245);
+    width: 100%;
+    margin: auto;
+    padding: 0% 1.5%;
+    padding-top: 1%;
+    border-spacing: unset;
+    font-size: small;
+}
+
+th{
+    background: rgb(47,193,218);
+    color: white;
+    font-weight: normal;
+}
+
+td{
+    padding-right: 5%;
+    font-size: x-small;
+}
+
+td:hover{
+    background: white;
+}
+
+#download-img{
+    float: right;
+    margin-top: 2px;
 }
