@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M2D3A1</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
@@ -19,9 +21,9 @@
 
                 <div class="header-top-left">
 
-                    <img src="image/tu-tangle.gif" alt="" width="35%" style="margin-bottom: -0.5%;">
-                    <input class="header-search" type="text" placeholder="Search by Term, Member, or Entry Title" style="width: 40%; height: 100%; border: none; vertical-align: top; background-color: rgb(201,236,244); padding-left: 2%;">
-                    <input class="header-search" type="button" value="SEARCH" style="width: auto; ; border: none; vertical-align: top; color: white; background-color: rgb(42,78,87); padding-left: 2%; padding-right: 2%;">
+                    <img id="tutangle" src="image/tu-tangle.gif" alt="TuTangle" width="35%" style="margin-bottom: -0.5%;">
+                    <input class="header-search text-search" type="text" placeholder="Search by Term, Member, or Entry Title">
+                    <input class="header-search button-search" type="button" value="SEARCH">
 
                 </div>
 
@@ -38,7 +40,18 @@
                         <li><span><a href="#" target="_blank"> Invite New Members </a></span></li>
                     </ul>
                 </div>
-                <div class="header-bottom-right"></div>
+                <div class="header-bottom-right">
+
+                    <div class="invites">
+                        <img id="invites" src="image/invites.gif" alt="invites"> 
+                        Topic Boxes Invites - 2
+                    </div>
+                    <div class="requests"> 
+                        <img id="requests" src="image/requests.gif" alt="requests"> 
+                        Friend Requests - 0
+                    </div>
+
+                </div>
 
             </div>
 
@@ -46,105 +59,121 @@
 
         <div class="body-wrapper">
 
-            <div class="first-table">
+            <div class="body-wrapper-left">
 
-                <table>
-                    <tr><th>Recent Searches</th></tr>
-                    <tr><td><a href="#" target="_blank">Nick Cave and the Bad Animals</a> <img id="download-img" src="image/download.gif" alt="download"></td></tr>
-                    <tr><td><a href="#" target="_blank">African Animals</a> <img id="download-img" src="image/download.gif" alt="download"></td></tr>
-                    <tr><th>Recent Searches</th></tr>
-                    <tr><td><a href="#" target="_blank">Different Versions of the Trtistan Und Isolde Prelude</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                    <tr><td><a href="#" target="_blank">Music</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                    <tr><td><a href="#" target="_blank">Guitar</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                    <tr><td><a href="#" target="_blank">Bob Cohen</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                    <tr><td><a href="#" target="_blank">Mark Schnack</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                    <tr><td><a href="#" target="_blank">Jefferson Dickey</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
-                </table>
+                <div class="first-table">
 
-            </div>
+                    <table>
+                        <tr><th>Recent Searches</th></tr>
+                        <tr><td><a href="#" target="_blank">Nick Cave and the Bad Animals</a> <img id="download-img" src="image/download.gif" alt="download"></td></tr>
+                        <tr><td><a href="#" target="_blank">African Animals</a> <img id="download-img" src="image/download.gif" alt="download"></td></tr>
+                        <tr><th>Recent Searches</th></tr>
+                        <tr><td><a href="#" target="_blank">Different Versions of the Trtistan Und Isolde Prelude</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                        <tr><td><a href="#" target="_blank">Music</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                        <tr><td><a href="#" target="_blank">Guitar</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                        <tr><td><a href="#" target="_blank">Bob Cohen</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                        <tr><td><a href="#" target="_blank">Mark Schnack</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                        <tr><td><a href="#" target="_blank">Jefferson Dickey</a> <img id="download-img" src="image/options.gif" alt="options"></td></tr>
+                    </table>
 
-            <div class="entry-box">
-                <h3>Entries</h3>
-                <div class="entry-types">
-                    <div class="entry-left entry">
-                        All Entries <br>
-                        <div class="entry-first sub-entry">
-                            All Members
+                </div>
+
+                <div class="entry-box">
+                    <h3>Entries</h3>
+                    <div class="entry-types">
+                        <div class="entry-left entry">
+                            All Entries <br>
+                            <a href="#" target="_self">
+                                <div class="entry-first sub-entry" tabindex="1">
+                                    All Members
+                                </div>
+                            </a>
+                            <a href="#" target="_self">
+                                <div class="entry-second sub-entry" tabindex="2">
+                                    Friends
+                                </div>
+                            </a>
                         </div>
-                        <div class="entry-second sub-entry">
-                            Friends
+                        <div class="entry-right entry">
+                            Subscribed <br>
+                            <a href="#" target="_self">
+                                <div class="entry-first sub-entry" tabindex="3">
+                                    New Entries
+                                </div>
+                            </a>
+                            <a href="#" target="_self">
+                                <div class="entry-second sub-entry" tabindex="4">
+                                    New Comments
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="entry-right entry">
-                        Subscribed <br>
-                        <div class="entry-first sub-entry">
-                            New Entries
+                    <div class="entry-person">
+                        <div class="person-box">
+                            <img src="image/person1.gif" alt="person" style="display: inline-block;">
+                            <div class="person-details" style="display: inline-block;">
+                                <h5>Day for Night by François Truffaut, a ground breaking film</h5>
+                                <p>by <a href="#" target="_blank">Alan Coe</a> | Feburary 10, 2012 | <subscribe style="color: green;">Subscribed</subscribe></p>
+                                <p>From Topic Box: <a href="#" target="_blank">My Favourite Movies</a></p>
+                            </div>
                         </div>
-                        <div class="entry-second sub-entry">
-                            New Comments
+                        <div class="person-box">
+                            <img src="image/person2.gif" alt="person" style="display: inline-block;">
+                            <div class="person-details" style="display: inline-block;">
+                                <p><a href="#" target="_blank">NEW ENTRY!</a></p>
+                                <h5>Blade Runner, The Director's Cut</h5>
+                                <p>by <a href="#" target="_blank">Mary Pilot</a> | Feburary 8, 2012</p>
+                                <p>From Topic Box: <a href="#" target="_blank">Behind The Scene</a></p>
+                            </div>
+                        </div>
+                        <div class="person-box">
+                            <img src="image/person3.gif" alt="person" style="display: inline-block;">
+                            <div class="person-details" style="display: inline-block;">
+                                <p><a href="#" target="_blank">NEW COMMENT!</a></p>
+                                <h5>the Best French Restaurant in Chicago?</h5>
+                                <p>by <a href="#" target="_blank">Jim Roy</a> | Freburary 7, 2012</p>
+                                <p>From Topic Box: <a href="#" target="_blank">Chicago Restaurants Reviews</a></p>
+                            </div>
+                        </div>
+                        <div class="person-box">
+                            <img src="image/person4.jpg" alt="person" style="display: inline-block;">
+                            <div class="person-details" style="display: inline-block;">
+                                <h5>The Meaning of Night. Dark Book but incredibly well written.</h5>
+                                <p>by <a href="#" target="_blank">John-Peter Moise</a> | Feburary 7,2012 | <subscribe>Subscribed</subscribe></p>
+                                <p>From Topic Box: <a href="#" target="_blank">Books Read & Books to Read</a></p>
+                            </div>
+                        </div>
+                        <div class="person-box">
+                            <img src="image/person5.jpg" alt="person" style="display: inline-block;">
+                            <div class="person-details" style="display: inline-block;">
+                                <p style="color: red;">TOPIC BOX INVITE!</p>
+                                <h5>Pea Pesto</h5>
+                                <p>by <a href="#" target="_blank">Marianne Gig</a> | Freburary 6, 2012</p>
+                                <p>From Topic Box: <a href="#" target="_blank">Favourite Recipies</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="entry-person">
-                    <div class="person-box">
-                        <img src="image/person1.gif" alt="person" style="display: inline-block;">
-                        <div class="person-details" style="display: inline-block;">
-                            <h5>Day for Night by François Truffaut, a ground breaking film</h5>
-                            <p>by <a href="#" target="_blank">Alan Coe</a> | Feburary 10, 2012 | <subscribe style="color: green;">Subscribed</subscribe></p>
-                            <p>From Topic Box: <a href="#" target="_blank">My Favourite Movies</a></p>
-                        </div>
-                    </div>
-                    <div class="person-box">
-                        <img src="image/person2.gif" alt="person" style="display: inline-block;">
-                        <div class="person-details" style="display: inline-block;">
-                            <p><a href="#" target="_blank">NEW ENTRY!</a></p>
-                            <h5>Blade Runner, The Director's Cut</h5>
-                            <p>by <a href="#" target="_blank">Mary Pilot</a> | Feburary 8, 2012</p>
-                            <p>From Topic Box: <a href="#" target="_blank">Behind The Scene</a></p>
-                        </div>
-                    </div>
-                    <div class="person-box">
-                        <img src="image/person3.gif" alt="person" style="display: inline-block;">
-                        <div class="person-details" style="display: inline-block;">
-                            <p><a href="#" target="_blank">NEW COMMENT!</a></p>
-                            <h5>the Best French Restaurant in Chicago?</h5>
-                            <p>by <a href="#" target="_blank">Jim Roy</a> | Freburary 7, 2012</p>
-                            <p>From Topic Box: <a href="#" target="_blank">Chicago Restaurants Reviews</a></p>
-                        </div>
-                    </div>
-                    <div class="person-box">
-                        <img src="image/person4.jpg" alt="person" style="display: inline-block;">
-                        <div class="person-details" style="display: inline-block;">
-                            <h5>The Meaning of Night. Dark Book but incredibly well written.</h5>
-                            <p>by <a href="#" target="_blank">John-Peter Moise</a> | Feburary 7,2012 | <subscribe>Subscribed</subscribe></p>
-                            <p>From Topic Box: <a href="#" target="_blank">Books Read & Books to Read</a></p>
-                        </div>
-                    </div>
-                    <div class="person-box">
-                        <img src="image/person5.jpg" alt="person" style="display: inline-block;">
-                        <div class="person-details" style="display: inline-block;">
-                            <p style="color: red;">TOPIC BOX INVITE!</p>
-                            <h5>Pea Pesto</h5>
-                            <p>by <a href="#" target="_blank">Marianne Gig</a> | Freburary 6, 2012</p>
-                            <p>From Topic Box: <a href="#" target="_blank">Favourite Recipies</a></p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
+            <div class="body-wrapper-right">
             
-            <div class="second-table">
-                <table>
-                    <tr><th>Video Tutorials</th></tr>
-                    <tr><td><a href="#" target="_blank">Overview of TuTangle</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Searching the site</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Previous & Saved Searches</a></td></tr>
-                    <tr><td><a href="#" target="_blank">The topic Box Page</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Creating a Topic Box</a></td></tr>
-                    <tr><td><a href="#" target="_blank">View Topic Box Entries</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Creating an Entry</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Privacy Settings</a></td></tr>
-                    <tr><td><a href="#" target="_blank">Co-Authoring</a></td></tr>
-                </table>
+                <div class="second-table">
+                    <table>
+                        <tr><th>Video Tutorials</th></tr>
+                        <tr><td><a href="#" target="_blank">Overview of TuTangle</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Searching the site</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Previous & Saved Searches</a></td></tr>
+                        <tr><td><a href="#" target="_blank">The topic Box Page</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Creating a Topic Box</a></td></tr>
+                        <tr><td><a href="#" target="_blank">View Topic Box Entries</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Creating an Entry</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Privacy Settings</a></td></tr>
+                        <tr><td><a href="#" target="_blank">Co-Authoring</a></td></tr>
+                    </table>
+                </div>
+
             </div>
 
         </div>
