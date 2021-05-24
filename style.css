@@ -59,6 +59,11 @@ a{
     padding: 1% 3%;
 }
 
+.header-top-right{
+    position: absolute;
+    visibility: hidden;
+}
+
 .header-bottom{
     background: rgb(245,245,245);
     width: 100%;
@@ -142,6 +147,12 @@ td:hover + :last-child, td:first-child:hover{
 #download-img{
     float: right;
     margin-top: 2px;
+    width: 10%;
+}
+
+#option-img{
+    float: right;
+    width: 15%;
 }
 
 h2{
@@ -271,6 +282,11 @@ h2{
         padding-left: 1%;
     }
 
+    .header-top-right{
+        position: absolute;
+        visibility: hidden;
+    }
+
     .header-bottom ul{
         text-align: unset;
         margin: unset;
@@ -326,6 +342,10 @@ h2{
         height: auto;
     }
 
+    #download-img{
+        margin-right: 2.6%;
+    }
+
 }
 
 @media only screen and (min-width:1100px) {
@@ -335,13 +355,34 @@ h2{
     }
 
     #tutangle{
-        width: 20%;
+        width: 30%;
     }
 
     .header-search{
         padding: 0.5% 1%;
-        font-size: 65%;
-        margin-top: 0.7%;
+        font-size: 70%;
+        margin-top: 1.9%;
+    }
+
+    .header-top-left{
+        width: 65%;
+    }
+
+    .header-top-right{
+        float: right;
+        visibility: unset;
+        position: unset ;
+        margin-top: 2.5%;
+        margin-right: 2.5%;
+        text-align: right;
+    }
+
+    .header-top-right a{
+        font-size: 120%;
+    }
+
+    .header-top-right a:hover{
+        color: rgb(88, 84, 84);
     }
 
     .header-bottom{
@@ -382,7 +423,7 @@ h2{
     }
 
     .body-wrapper{
-        height: 75%;
+        height: 87%;
     }
 
     .body-wrapper-left{
@@ -412,7 +453,7 @@ h2{
     }
 
     td{
-        font-size: smaller;
+        font-size: small;
         padding: 3% 0%;
         padding-left: 4%;
     }
@@ -421,8 +462,18 @@ h2{
        padding-right: 5px;
     }
 
+    #download-img{
+        width: 25%;
+        padding-right: 1.5%;
+    }
+
+    #option-img{
+        width: 35%;
+    }
+
     .entry-box{
         width: 68%;
+        height: 100%;
         float: right;
         vertical-align: top;
         margin-top: -0.7%;
@@ -439,13 +490,23 @@ h2{
 
     .sub-entry{
         margin-top: 2%;
+        padding: 2% 0%;
         font-size: smaller;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
-    
+    #person-img{
+        width: 10%;
+    }
 
+    h5{
+        font-size: small !important;
+    }
 
-
+    p{
+        font-size: x-small !important;
+    }
 
     .body-wrapper-right {
         width: 22%;
@@ -476,7 +537,12 @@ h2{
     }
 
     .footer ul li{
+        float: left;
         margin-right: 2%;
+    }
+
+    .footer ul li:hover{
+        color: rgb(126,215,232);
     }
 
     .footer ul li:first-child{
